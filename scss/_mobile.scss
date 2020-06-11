@@ -1,0 +1,252 @@
+@include mediaXl {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .logo {
+        display: none;
+    }
+    .cont-mob {
+        display: inline-flex;
+        margin: 50px;
+        .info-mob {
+            display: block;
+            padding-top: 20%;
+            width: 50%;
+        }
+        .fresa-bebible-1-1 {
+            height: 400px;
+            margin: 10%;
+        }
+    }
+    .info {
+        height: 575px;
+        background-image: url('../img/img-fresas-6.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 15%;
+        background-size: 10%;
+        .c-info {
+            display: inline-flex;
+            background-image: url('../img/img-fresas-7.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 20%;
+            background-size: 10%;
+        }
+        .c-nutri {
+            width: 35%;
+            margin-left: 15%;
+            background-image: url('../img/img-fresas-5.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 85%;
+            background-size: 60%;
+        }
+        .bg-tablas {
+            width: 35%;
+        }
+    }
+    .familia {  
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .c-fam {
+            overflow: hidden;
+            display: inline-flex;
+            align-items: baseline;
+            justify-content: center;
+            .i-fam {
+                margin: 20px;
+            }
+        }
+    }
+    .logo-danone-footer {
+        margin-right: 40%;
+    }
+    .logo-d {
+        margin-left: 40%;
+    }
+}
+@include mediaLg {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .logo {
+        display: none;
+    }
+    .cont-mob {
+        display: inline-flex;
+        margin: 50px;
+        .info-mob {
+            display: block;
+            padding-top: 20%;
+            width: 50%;
+        }
+        .fresa-bebible-1-1 {
+            height: 400px;
+            margin: 10%;
+        }
+    }
+    .info {
+        height: 575px;
+        background-image: url('../img/img-fresas-6.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 15%;
+        background-size: 10%;
+        .c-info {
+            display: inline-flex;
+            background-image: url('../img/img-fresas-7.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 20%;
+            background-size: 10%;
+        }
+        .c-nutri {
+            width: 35%;
+            margin-left: 15%;
+            background-image: url('../img/img-fresas-5.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 85%;
+            background-size: 60%;
+        }
+        .bg-tablas {
+            width: 35%;
+        }
+    }
+    .familia {  
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .c-fam {
+            overflow: hidden;
+            display: inline-flex;
+            align-items: baseline;
+            justify-content: center;
+            .i-fam {
+                margin: 20px;
+            }
+        }
+    }
+    .logo-danone-footer {
+        margin-right: 40%;
+    }
+    .logo-d {
+        margin-left: 40%;
+    }
+}
+@include mediaMd {
+    .lg-nav {
+        visibility: hidden;
+    }
+    .cont-mob {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 90px;
+        align-items: center;
+        justify-content: center;
+        .info-mob {
+            display: flex;
+            flex-flow: column wrap;
+            /* padding-top: 90px; */
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .info {
+        height: 775px;
+        display: flex;
+        flex-flow: column wrap;
+        background-image: url('../img/img-fresas-6.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 15%;
+        background-size: 20%;
+        .Informacin-nutrimen,
+        .Ingredientes-Leche {
+            padding: 0 20px;
+        }
+        .bg-tablas {
+            width: calc(100% - 40px);        
+            margin-top: 4rem;
+            background-image: url('../img/img-fresas-7.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 20%;
+            background-size: 20%;
+        }
+    }
+    .familia {        
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .logo-danone-footer {
+        margin-right: 25%;
+    }
+    .logo-d {
+        margin-left: 25%;
+    }
+}
+@include mediaSm {
+    .lg-nav {
+        visibility: hidden;
+    }
+    .cont-mob {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 90px;
+        align-items: center;
+        justify-content: center;
+        .info-mob {
+            display: flex;
+            flex-flow: column wrap;
+            /* padding-top: 90px; */
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .info {
+        height: 775px;
+        display: flex;
+        flex-flow: column wrap;
+        background-image: url('../img/img-fresas-6.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 15%;
+        background-size: 20%;
+        .Informacin-nutrimen,
+        .Ingredientes-Leche {
+            padding: 0 20px;
+        }
+        .bg-tablas {
+            width: calc(100% - 40px);        
+            margin-top: 4rem;
+            background-image: url('../img/img-fresas-7.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: 20%;
+            background-size: 20%;
+        }
+    }
+    .familia {        
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .logo-danone-footer {
+        margin-right: 25%;
+    }
+    .logo-d {
+        margin-left: 25%;
+    }
+}   

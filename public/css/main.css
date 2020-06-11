@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #b98b3c; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 80%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background-color: #f9e6e6;
+    opacity: 0.8;
+    list-style: none;
+    transform: translate3d(0, 100%, 0); }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0); }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    text-decoration: none; }
+
+nav.lg-nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  nav.lg-nav ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    align-items: center; }
+    nav.lg-nav ul li {
+      /*  display: inline; */
+      font-size: 17px;
+      float: right;
+      position: relative; }
+      nav.lg-nav ul li a {
+        text-decoration: none;
+        padding: 14px; }
+    nav.lg-nav ul .lg-logo {
+      float: left;
+      position: relative; }
+
+@media screen and (min-width: 1171px) and (max-width: 1920px) {
+  .menu-btn {
+    visibility: hidden; }
+  .logo {
+    display: none; }
+  .cont-mob {
+    display: inline-flex;
+    margin: 50px; }
+    .cont-mob .info-mob {
+      display: block;
+      padding-top: 20%;
+      width: 50%; }
+    .cont-mob .fresa-bebible-1-1 {
+      height: 400px;
+      margin: 10%; }
+  .info {
+    height: 575px;
+    background-image: url("../img/img-fresas-6.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15%;
+    background-size: 10%; }
+    .info .c-info {
+      display: inline-flex;
+      background-image: url("../img/img-fresas-7.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 20%;
+      background-size: 10%; }
+    .info .c-nutri {
+      width: 35%;
+      margin-left: 15%;
+      background-image: url("../img/img-fresas-5.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 85%;
+      background-size: 60%; }
+    .info .bg-tablas {
+      width: 35%; }
+  .familia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    .familia .c-fam {
+      overflow: hidden;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center; }
+      .familia .c-fam .i-fam {
+        margin: 20px; }
+  .logo-danone-footer {
+    margin-right: 40%; }
+  .logo-d {
+    margin-left: 40%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .menu-btn {
+    visibility: hidden; }
+  .logo {
+    display: none; }
+  .cont-mob {
+    display: inline-flex;
+    margin: 50px; }
+    .cont-mob .info-mob {
+      display: block;
+      padding-top: 20%;
+      width: 50%; }
+    .cont-mob .fresa-bebible-1-1 {
+      height: 400px;
+      margin: 10%; }
+  .info {
+    height: 575px;
+    background-image: url("../img/img-fresas-6.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15%;
+    background-size: 10%; }
+    .info .c-info {
+      display: inline-flex;
+      background-image: url("../img/img-fresas-7.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 20%;
+      background-size: 10%; }
+    .info .c-nutri {
+      width: 35%;
+      margin-left: 15%;
+      background-image: url("../img/img-fresas-5.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 85%;
+      background-size: 60%; }
+    .info .bg-tablas {
+      width: 35%; }
+  .familia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    .familia .c-fam {
+      overflow: hidden;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center; }
+      .familia .c-fam .i-fam {
+        margin: 20px; }
+  .logo-danone-footer {
+    margin-right: 40%; }
+  .logo-d {
+    margin-left: 40%; } }
+
+@media screen and (max-width: 768px) {
+  .lg-nav {
+    visibility: hidden; }
+  .cont-mob {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 90px;
+    align-items: center;
+    justify-content: center; }
+    .cont-mob .info-mob {
+      display: flex;
+      flex-flow: column wrap;
+      /* padding-top: 90px; */
+      align-items: center;
+      justify-content: center; }
+  .info {
+    height: 775px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url("../img/img-fresas-6.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15%;
+    background-size: 20%; }
+    .info .Informacin-nutrimen,
+    .info .Ingredientes-Leche {
+      padding: 0 20px; }
+    .info .bg-tablas {
+      width: calc(100% - 40px);
+      margin-top: 4rem;
+      background-image: url("../img/img-fresas-7.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 20%;
+      background-size: 20%; }
+  .familia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+  .logo-danone-footer {
+    margin-right: 25%; }
+  .logo-d {
+    margin-left: 25%; } }
+
+@media screen and (max-width: 568px) {
+  .lg-nav {
+    visibility: hidden; }
+  .cont-mob {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 90px;
+    align-items: center;
+    justify-content: center; }
+    .cont-mob .info-mob {
+      display: flex;
+      flex-flow: column wrap;
+      /* padding-top: 90px; */
+      align-items: center;
+      justify-content: center; }
+  .info {
+    height: 775px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url("../img/img-fresas-6.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 15%;
+    background-size: 20%; }
+    .info .Informacin-nutrimen,
+    .info .Ingredientes-Leche {
+      padding: 0 20px; }
+    .info .bg-tablas {
+      width: calc(100% - 40px);
+      margin-top: 4rem;
+      background-image: url("../img/img-fresas-7.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-position-y: 20%;
+      background-size: 20%; }
+  .familia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+  .logo-danone-footer {
+    margin-right: 25%; }
+  .logo-d {
+    margin-left: 25%; } }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  line-height: 1.5; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400; }
+
+a {
+  color: #000000;
+  text-decoration: none; }
+
+.BG-tpop {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67)); }
+
+.BG-mob {
+  width: 100%;
+  height: 775px;
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
+  background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+  /* background-color: #2ECC71 */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%); }
+
+.cont-mob .picker04,
+.cont-mob .picker02 {
+  height: 23px;
+  border-radius: 11.5px;
+  border: solid 1px rgba(0, 0, 0, 0.14); }
+  .cont-mob .picker04 a,
+  .cont-mob .picker02 a {
+    color: #000000;
+    margin: 0.5rem; }
+
+.cont-mob .picker02 {
+  background-color: rgba(255, 0, 0, 0.14); }
+
+.cont-mob .Vitalnea-Bebible-F {
+  color: #78246d;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px; }
+
+.cont-mob .La-presentacin-ide {
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0 20px; }
+
+.cont-mob .btn-Copy-2 {
+  width: 88%;
+  height: 40px;
+  background-color: #78246d;
+  padding: 9px 20px;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 10px; }
+
+.cont-mob .logos {
+  justify-content: center;
+  margin-top: 25px; }
+  .cont-mob .logos .no-sugar-ribbon {
+    width: 86px;
+    height: 62px;
+    margin-left: 10px; }
+  .cont-mob .logos .fmd-interior {
+    width: 62px;
+    height: 62px;
+    margin-right: 10px; }
+
+.cont-mob .oval-d {
+  width: 50px;
+  height: 50px;
+  background-color: #78246d;
+  margin-top: 10%;
+  display: flex;
+  border-radius: 50%; }
+  .cont-mob .oval-d .flecha {
+    width: 23px;
+    height: 22px;
+    margin: auto; }
+
+.info {
+  width: 100%;
+  padding-top: 80px;
+  justify-content: center; }
+  .info .Informacin-nutrimen {
+    letter-spacing: 2.41px;
+    color: #6f2e6d;
+    font-size: 18px;
+    font-weight: 300; }
+  .info .Ingredientes-Leche {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000; }
+    .info .Ingredientes-Leche .b {
+      font-weight: 600; }
+  .info .bg-tablas {
+    margin-left: 20px;
+    height: 409px;
+    background-color: #fafafa; }
+    .info .bg-tablas .t1 {
+      height: 396px;
+      width: 100%;
+      margin-left: 12px;
+      margin-top: 12px;
+      color: #78246d;
+      font-weight: 300;
+      line-height: 2.7;
+      font-size: 11px; }
+      .info .bg-tablas .t1 .Contenido-energetico {
+        width: 72%;
+        text-align: right; }
+      .info .bg-tablas .t1 .kCal {
+        margin-left: 12px; }
+
+.familia {
+  background-image: url("../img/bg-familia-vitalinea.png");
+  background-repeat: no-repeat;
+  /* height: 504px; */
+  width: 100%; }
+  .familia .LA-FAMILIA-VITALNEA {
+    height: 30px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #78246d; }
+  .familia .griego {
+    height: 106px;
+    margin-top: 50px; }
+  .familia .sAzucar {
+    height: 134px; }
+  .familia .bebible {
+    height: 207px; }
+  .familia span {
+    font-weight: 300;
+    font-size: 11px;
+    margin: 8px;
+    color: #78246d; }
+  .familia .i-fam {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  footer .log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: calc(100% - 40px); }
+    footer .log .logo-danone-footer {
+      width: 47px;
+      height: 47px; }
+    footer .log .logo-d {
+      width: 79px;
+      height: 30px; }
+  footer .terminos {
+    font-size: 11px;
+    margin: 20px 20px 0 20px; }
+  footer .derechos {
+    margin: 0 20px 20px 0;
+    font-size: 12px; }
+
+.logo {
+  padding: 18px 0 0 20px; }
+
+.img-logo-vitalinea {
+  width: 129px;
+  height: 50px;
+  object-fit: contain; }
+
+.fresa2 {
+  width: 125px;
+  height: 143px;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.fresa6 {
+  width: 58px;
+  height: 156px;
+  transform: rotateY(180deg);
+  top: 80px;
+  left: 0;
+  position: absolute; }
+
+.fresa-bebible-1-1 {
+  height: 295px; }
+
+.img-social-facebook {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; }
+
+.img-social-instagram {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; }
+
+.img-social-youtube {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; }
